@@ -1,4 +1,4 @@
-# web-bali-island
+# web tentang Bali
 
 Tugas membuat web
 
