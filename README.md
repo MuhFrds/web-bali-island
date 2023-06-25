@@ -2,5 +2,5 @@
 
 Tugas Membuat Web
 
-semester 2 X PPLG 2 
+Semester 2 X PPLG 2 
 2023
