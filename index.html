@@ -123,7 +123,7 @@
     <!-- galery -->
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" name="web-form">
       <div class="container">
         <div class="box-contact">
           <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Contact</h1>
@@ -142,6 +142,7 @@
                 <td><textarea name="pesan" id="pesan" placeholder="Masukkan Pesan" autocomplete="off"></textarea></td>
               </tr>
             </table>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>
@@ -159,6 +160,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbxctX1ffFQmu4IuLDuuX-1k0bHEawmsOhnpxzllw87rd3Qk63cXO7DE76BJf3ZLHIJo/exec";
+      const form = document.forms["web-form"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>

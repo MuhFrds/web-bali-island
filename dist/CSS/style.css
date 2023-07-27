@@ -211,6 +211,16 @@ header .hero h1 {
   padding: 15px 200px 200px 20px;
 }
 
+.contact .box-contact form button {
+  font-size: 15px;
+  background: #2b2d42;
+  color: white;
+  border: white 2px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
 /* footer */
 
 footer {
